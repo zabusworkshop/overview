@@ -4,7 +4,7 @@
 		<f:title>
 			<f:DynamicPageTitle>
 				<f:heading>
-					<Title text="Master"/>
+					<Title text="Empoyees"/>
 				</f:heading>
 			</f:DynamicPageTitle>
 		</f:title>

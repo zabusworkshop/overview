@@ -1,18 +1,69 @@
-<mvc:View
-	xmlns:core="sap.ui.core"
-	xmlns:mvc="sap.ui.core.mvc"
-	xmlns="sap.m"
-	xmlns:f="sap.f"
-	controllerName="workshop.overview.controller.Detail"
-	xmlns:html="http://www.w3.org/1999/xhtml">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.f" xmlns:uxap="sap.uxap"
+	controllerName="workshop.overview.controller.Detail" xmlns:html="http://www.w3.org/1999/xhtml">
 	<f:DynamicPage toggleHeaderOnTitleClick="false">
 		<f:title>
 			<f:DynamicPageTitle>
 				<f:heading>
-					<Title text="{FirstName} {LastName}"/>
+					<Title text="Employee Details"/>
 				</f:heading>
 			</f:DynamicPageTitle>
 		</f:title>
+		<f:content>
+			<uxap:ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true" alwaysShowContentHeader="false"
+				preserveHeaderStateOnScroll="false" headerContentPinnable="true" isChildPage="true" upperCaseAnchorBar="false">
+				<uxap:headerTitle>
+					<uxap:ObjectPageDynamicHeaderTitle>
+						<uxap:actions>
+							<ToggleButton text="Edit" type="Emphasized"/>
+							<Button text="Delete" type="Transparent"/>
+						</uxap:actions>
+						<uxap:expandedHeading>
+							<Title text="{FirstName} {LastName}" wrapping="true"/>
+						</uxap:expandedHeading>
+						<uxap:snappedHeading>
+							<Title text="{= ${FirstName}.substring(0,1)}. {LastName}" wrapping="true"/>
+						</uxap:snappedHeading>
+					</uxap:ObjectPageDynamicHeaderTitle>
+				</uxap:headerTitle>
+				<uxap:headerContent>
+					<VBox>
+						<Text text="{Title}" class="sapUiTinyMarginEnd"/>
+						<Text text="{HomePhone}"/>
+					</VBox>
+				</uxap:headerContent>
+				<uxap:sections>
+					<uxap:ObjectPageSection title="Orders">
+						<uxap:ObjectPageSubSection>
+							<Table id="idProductsTable" inset="false" items="{
+									path: 'Orders'
+								}" growingThreshold="5" growing="true">
+								<columns>
+									<Column width="12em">
+										<Text text="Customer"/>
+									</Column>
+									<Column minScreenWidth="Tablet" demandPopin="true">
+										<Text text="Freight"/>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem>
+										<cells>
+											<Text text="{CustomerID}"/>
+											<Text text="{Freight}"/>
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</uxap:ObjectPageSubSection>
+					</uxap:ObjectPageSection>
+					<uxap:ObjectPageSection title="Section 2">
+						<uxap:ObjectPageSubSection>
+							<Text text="Section 2"/>
+						</uxap:ObjectPageSubSection>
+					</uxap:ObjectPageSection>
+				</uxap:sections>
+			</uxap:ObjectPageLayout>
+		</f:content>
 		<f:footer>
 			<OverflowToolbar>
 				<ToolbarSpacer/>

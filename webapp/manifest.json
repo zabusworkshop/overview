@@ -98,10 +98,9 @@
 			"routes": [{
                 "pattern": "",
                 "name": "main",
-                "layout": "TwoColumnsBeginExpanded",
+                "layout": "OneColumn",
                 "target": [
-                    "master",
-                    "detail"
+                    "master"
                 ]
             }, {
                 "pattern": "employee/{empId}",
