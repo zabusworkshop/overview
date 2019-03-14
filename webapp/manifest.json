@@ -95,8 +95,35 @@
 				"transition": "slide",
 				"async": true
 			},
-			"routes": [],
-			"targets": {}
+			"routes": [{
+                "pattern": "",
+                "name": "main",
+                "layout": "TwoColumnsBeginExpanded",
+                "target": [
+                    "master",
+                    "detail"
+                ]
+            }, {
+                "pattern": "employee/{empId}",
+                "name": "detail",
+                "layout": "TwoColumnsMidExpanded",
+                "target": [
+                    "master",
+                    "detail"
+                ]
+            }],
+			"targets": {
+				"master": {
+                    "viewName": "Master",
+                    "clearControlAggregation": true,
+                    "controlAggregation": "beginColumnPages"
+                },
+                "detail": {
+                    "viewName": "Detail",
+                    "clearControlAggregation": true,
+                    "controlAggregation": "midColumnPages"
+                }
+			}
 		}
 	}
 }

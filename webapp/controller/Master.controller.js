@@ -4,6 +4,15 @@ sap.ui.define([
 	"use strict";
 
 	return Controller.extend("workshop.overview.controller.Master", {
+		
+		onEmplpoyeeSelected: function (oEvent) {
+			var oBindingContext = oEvent.getParameter("listItem").getBindingContext();
+			var nEmpId = oBindingContext.getProperty("EmployeeID");
+			var oRouter = this.getOwnerComponent().getRouter();
+			oRouter.navTo("detail", {
+				empId: encodeURIComponent(nEmpId)
+			});
+		}
 
 		/**
 		 * Called when a controller is instantiated and its View controls (if available) are already created.

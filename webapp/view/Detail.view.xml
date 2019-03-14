@@ -5,13 +5,20 @@
 	xmlns:f="sap.f"
 	controllerName="workshop.overview.controller.Detail"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<f:DynamicPage id="dynamicPageId" toggleHeaderOnTitleClick="false">
+	<f:DynamicPage toggleHeaderOnTitleClick="false">
 		<f:title>
 			<f:DynamicPageTitle>
 				<f:heading>
-					<Title text="Title"/>
+					<Title text="{FirstName} {LastName}"/>
 				</f:heading>
 			</f:DynamicPageTitle>
 		</f:title>
+		<f:footer>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Button type="Accept" text="Accept"/>
+				<Button type="Reject" text="Reject"/>
+			</OverflowToolbar>
+		</f:footer>
 	</f:DynamicPage>
 </mvc:View>
