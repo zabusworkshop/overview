@@ -26,6 +26,7 @@
 					<StandardListItem title="Item 1" />
 					<StandardListItem title="Item 2" />
 					<StandardListItem title="Item 3" />
+					<StandardListItem title="Item 4" />
 				</List>
 			</VBox>
 		</f:content>
