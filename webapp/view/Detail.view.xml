@@ -1,0 +1,17 @@
+<mvc:View
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:f="sap.f"
+	controllerName="workshop.overview.controller.Detail"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<f:DynamicPage id="dynamicPageId" toggleHeaderOnTitleClick="false">
+		<f:title>
+			<f:DynamicPageTitle>
+				<f:heading>
+					<Title text="Title"/>
+				</f:heading>
+			</f:DynamicPageTitle>
+		</f:title>
+	</f:DynamicPage>
+</mvc:View>

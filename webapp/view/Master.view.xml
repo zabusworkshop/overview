@@ -1,8 +1,4 @@
-<mvc:View
-	controllerName="workshop.overview.controller.Master"
-	xmlns="sap.m"
-	xmlns:f="sap.f"
-	xmlns:mvc="sap.ui.core.mvc">
+<mvc:View controllerName="workshop.overview.controller.Master" xmlns="sap.m" xmlns:f="sap.f" xmlns:mvc="sap.ui.core.mvc">
 	<f:DynamicPage id="dynamicPageId" toggleHeaderOnTitleClick="false">
 		<!-- DynamicPage Title -->
 		<f:title>
@@ -12,7 +8,6 @@
 				</f:heading>
 			</f:DynamicPageTitle>
 		</f:title>
-
 		<!-- DynamicPage Content -->
 		<f:content>
 			<VBox fitContainer="true">
@@ -22,15 +17,12 @@
 					<OverflowToolbarButton icon="sap-icon://add" text="Add" type="Transparent" press=".onAdd"/>
 					<OverflowToolbarButton icon="sap-icon://sort" text="Sort" type="Transparent" press=".onSort"/>
 				</OverflowToolbar>
-				<List>
-					<StandardListItem title="Item 1" />
-					<StandardListItem title="Item 2" />
-					<StandardListItem title="Item 3" />
-					<StandardListItem title="Item 4" />
+				<List id="empList" items="{ path: '/Employees', parameters: { operationMode: 'Auto', threshold: 20 } }" mode="SingleSelectMaster"
+					selectionChange="onEmplpoyeeSelected">
+					<StandardListItem title="{FirstName} {LastName}"/>
 				</List>
 			</VBox>
 		</f:content>
-
 		<!-- DynamicPage Footer -->
 		<f:footer>
 			<OverflowToolbar>

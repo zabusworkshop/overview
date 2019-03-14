@@ -1,0 +1,130 @@
+[{
+	"EmployeeID": 711,
+	"LastName": "Ivanov",
+	"FirstName": "Ivan",
+	"Title": "Title 1",
+	"TitleOfCourtesy": "TitleOfCourtesy 1",
+	"BirthDate": "/Date(315694800000)/",
+	"HireDate": "/Date(1559913246000)/",
+	"Address": "Address 1",
+	"City": "City 1",
+	"Region": "Region 1",
+	"PostalCode": "PostalCode 1",
+	"Country": "Country 1",
+	"HomePhone": "HomePhone 1",
+	"Extension": "Extension 1",
+	"Photo": "01001100001110011100010111100101",
+	"Notes": "Notes 1",
+	"ReportsTo": 711,
+	"PhotoPath": "PhotoPath 1",
+	"__metadata": {
+		"uri": "Employees(711)",
+		"type": "NorthwindModel.Employee"
+	},
+	"Employees1": {
+		"__deferred": {
+			"uri": "Employees(711)/Employees1"
+		}
+	},
+	"Employee1": {
+		"__deferred": {
+			"uri": "Employees(711)/Employee1"
+		}
+	},
+	"Orders": {
+		"__deferred": {
+			"uri": "Employees(711)/Orders"
+		}
+	},
+	"Territories": {
+		"__deferred": {
+			"uri": "Employees(711)/Territories"
+		}
+	}
+}, {
+	"EmployeeID": 4665,
+	"LastName": "Petrov",
+	"FirstName": "Petr",
+	"Title": "Title 2",
+	"TitleOfCourtesy": "TitleOfCourtesy 2",
+	"BirthDate": "/Date(674254800000)/",
+	"HireDate": "/Date(1191845646000)/",
+	"Address": "Address 2",
+	"City": "City 2",
+	"Region": "Region 2",
+	"PostalCode": "PostalCode 2",
+	"Country": "Country 2",
+	"HomePhone": "HomePhone 2",
+	"Extension": "Extension 2",
+	"Photo": "10001101010000101011111100000100",
+	"Notes": "Notes 2",
+	"ReportsTo": 4665,
+	"PhotoPath": "PhotoPath 2",
+	"__metadata": {
+		"uri": "Employees(4665)",
+		"type": "NorthwindModel.Employee"
+	},
+	"Employees1": {
+		"__deferred": {
+			"uri": "Employees(4665)/Employees1"
+		}
+	},
+	"Employee1": {
+		"__deferred": {
+			"uri": "Employees(4665)/Employee1"
+		}
+	},
+	"Orders": {
+		"__deferred": {
+			"uri": "Employees(4665)/Orders"
+		}
+	},
+	"Territories": {
+		"__deferred": {
+			"uri": "Employees(4665)/Territories"
+		}
+	}
+}, {
+	"EmployeeID": 4791,
+	"LastName": "Kuznetsov",
+	"FirstName": "Evgenii",
+	"Title": "Title 3",
+	"TitleOfCourtesy": "TitleOfCourtesy 3",
+	"BirthDate": "/Date(211582800000)/",
+	"HireDate": "/Date(1076246046000)/",
+	"Address": "Address 3",
+	"City": "City 3",
+	"Region": "Region 3",
+	"PostalCode": "PostalCode 3",
+	"Country": "Country 3",
+	"HomePhone": "HomePhone 3",
+	"Extension": "Extension 3",
+	"Photo": "00001111011101111010101110111111",
+	"Notes": "Notes 3",
+	"ReportsTo": 4791,
+	"PhotoPath": "PhotoPath 3",
+	"__metadata": {
+		"uri": "Employees(4791)",
+		"type": "NorthwindModel.Employee"
+	},
+	"Employees1": {
+		"__deferred": {
+			"uri": "Employees(4791)/Employees1"
+		}
+	},
+	"Employee1": {
+		"__deferred": {
+			"uri": "Employees(4791)/Employee1"
+		}
+	},
+	"Orders": {
+		"__deferred": {
+			"uri": "Employees(4791)/Orders"
+		}
+	},
+	"Territories": {
+		"__deferred": {
+			"uri": "Employees(4791)/Territories"
+		}
+	}
+}]

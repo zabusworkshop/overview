@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>overview</title>
+
+		<script id="sap-ui-bootstrap"
+			src="/resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"workshop.overview": ""}'>
+		</script>
+		
+		<style>
+            .sapUiBody {
+                height: 100vh;
+            }
+        </style>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script>
+			sap.ui.getCore().attachInit(function() {
+				sap.ui.require(["workshop/overview/localService/mockserver"], function (mockserver) {
+					mockserver.init();
+					new sap.ui.core.ComponentContainer({
+						height : "100%",
+						name : "workshop.overview",
+						settings : {
+	                        id : "workshop.overview"
+	                    }
+					}).placeAt("content")
+				});
+			});
+		</script>
+	</head>
+
+	<body class="sapUiBody sapUiSizeCompact" id="content">
+	</body>
+
+</html>
