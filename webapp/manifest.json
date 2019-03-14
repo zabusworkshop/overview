@@ -114,12 +114,10 @@
 			"targets": {
 				"master": {
                     "viewName": "Master",
-                    "clearControlAggregation": true,
                     "controlAggregation": "beginColumnPages"
                 },
                 "detail": {
                     "viewName": "Detail",
-                    "clearControlAggregation": true,
                     "controlAggregation": "midColumnPages"
                 }
 			}

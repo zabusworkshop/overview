@@ -11,7 +11,7 @@ sap.ui.define([
 			var oRouter = this.getOwnerComponent().getRouter();
 			oRouter.navTo("detail", {
 				empId: encodeURIComponent(nEmpId)
-			});
+			}, true);
 		}
 
 		/**
